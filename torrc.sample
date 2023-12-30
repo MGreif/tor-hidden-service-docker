@@ -1,6 +1,17 @@
+# HiddenServiceDir describes the directory for the hidden service
+#   It contains the cryptographical keypair, hostname and authentication files for the service
+#   You can place/mount them manually or they will get created automatically
+#   Keep in mind, that the public key is responsible for the hostname/onion url
+#   So mounting the same keypair will result in the same onion domain.
+
+# HiddenServiceDir /var/lib/tor/<name-of-service>/
+# HiddenServicePort <TOR-port> <ip-address-of-service>:<port-of-service>
+
 HiddenServiceDir /var/lib/tor/test/
-HiddenServicePort 80 127.0.0.1:5173
-HiddenServicePort 443 127.0.0.1:443
+
+HiddenServicePort 80 localhost:5173
+HiddenServicePort 443 localhost:5173
+
 HiddenServiceVersion 3
 
 SocksPolicy reject *
