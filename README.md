@@ -4,6 +4,12 @@ This is a simple Docker wrapper for Tor hidden services. Learn more about the [t
 
 For details about the `torrc` file, visit the [documentation](https://github.com/torproject/tor/blob/main/src/config/torrc.sample.in)
 
+## Deployed Version
+
+Docker image -> https://hub.docker.com/r/mgreif/tor-hidden-service-docker
+
+Deployed hidden service -> http://g7sfnt5r36qf3i5hfneplkicbxnmzwlz2koulobyhpee7dw7pr4r5oqd.onion (Proxying to [anonchat](https://anonchat.greif.me) service)
+
 ## Prerequisites
 - Docker (Obviously)
 - [Optionally] Docker compose
