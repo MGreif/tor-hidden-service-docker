@@ -7,7 +7,7 @@
 # HiddenServiceDir /var/lib/tor/<name-of-service>/
 # HiddenServicePort <TOR-port> <ip-address-of-service>:<port-of-service>
 
-HiddenServiceDir /var/lib/tor/test/
+HiddenServiceDir /var/lib/tor/hidden-service/
 
 HiddenServicePort 80 localhost:5173
 HiddenServicePort 443 localhost:5173
